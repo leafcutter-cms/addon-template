@@ -3,14 +3,19 @@ namespace Leafcutter\Addons\Example\ExampleAddon;
 
 class Addon extends \Leafcutter\Addons\AbstractAddon
 {
+    /**
+     * Specify default config here. If it must include dynamic content, or
+     * for some other reason can't be a constant, delete this constant and
+     * override the method `getDefaultConfig()` instead.
+     */
     const DEFAULT_CONFIG = [];
 
     /**
-     * Method is executed as the first step when this Addon is loaded for use.
+     * Method is executed as the first step when this Addon is activated.
      *
      * @return void
      */
-    public function load(): void
+    public function activate(): void
     {
     }
 
@@ -28,7 +33,8 @@ class Addon extends \Leafcutter\Addons\AbstractAddon
 
     /**
      * Specify the names of the features this Addon provides. Some names may require
-     * you to implement certain interfaces.
+     * you to implement certain interfaces. Addon will also be available from
+     * AddonProvider::get() by any names given here.
      *
      * @return array
      */
@@ -58,7 +64,7 @@ class Addon extends \Leafcutter\Addons\AbstractAddon
      */
     public static function name(): string
     {
-        if ($data = json_decode(file_get_contents(__DIR__.'/../composer.json'),true)) {
+        if ($data = json_decode(file_get_contents(__DIR__ . '/../composer.json'), true)) {
             return $data['name'];
         }
         return 'unknown/unknownaddon';
