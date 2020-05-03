@@ -1,0 +1,25 @@
+{
+    "name": "leafcutter/leafcutter-addon-project",
+    "description": "Leafcutter addon project template. Before beginning change extra/leafcutter-addon and the autoloader to your own namespace.",
+    "extra": {
+        "leafcutter-addon": "Leafcutter\\Addons\\Example\\ExampleAddon\\Addon"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leafcutter\\Addons\\Example\\ExampleAddon\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joby Elliott",
+            "email": "code@byjoby.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "leafcutter/leafcutter": "*"
+    },
+    "type": "leafcutter-addon",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
