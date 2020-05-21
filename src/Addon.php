@@ -1,5 +1,5 @@
 <?php
-namespace Leafcutter\Addons\Example\ExampleAddon;
+namespace Leafcutter\Addons\MyNamespace\MyAddon;
 
 class Addon extends \Leafcutter\Addons\AbstractAddon
 {
