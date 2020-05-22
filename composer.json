@@ -16,10 +16,11 @@
         }
     ],
     "license": "MIT",
-    "require": {
-        "leafcutter/leafcutter": "dev-master"
-    },
     "type": "leafcutter-addon",
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "leafcutter/leafcutter": "dev-master",
+        "leafcutter/theme-core": "dev-master"
+    }
 }
