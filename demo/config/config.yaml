@@ -1,5 +1,8 @@
 site:
-  url: 'http://localhost/addon-template/demo/'
+  url: 'http://local.test/addon-template/demo/'
+
+directories:
+  web: ${directories.base}
 
 theme:
   activate:
@@ -11,9 +14,3 @@ templates:
 
 cache:
   driver: ephemeral
-  directory: '${base_dir}/cache/'
-
-assets:
-  output:
-    directory: '${base_dir}/assets/'
-    url: '@/assets/'
