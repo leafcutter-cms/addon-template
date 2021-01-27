@@ -1,5 +1,6 @@
-site:
-  url: 'http://local.test/addon-template/demo/'
+# generally you should not need to specify this
+# site:
+#   url: 'http://local.test/addon-template/demo/'
 
 directories:
   web: ${directories.base}
